@@ -1,3 +1,5 @@
+@import url(variables.css);
+
 .d-flex{
     display: flex;
 }
@@ -6,4 +8,14 @@
 }
 .align-items-center{
     align-items: center;
+}
+.justify-content-center{
+    justify-content: center;
+}
+.flex-column{
+    flex-direction: column;
+}
+.btn-primary{    
+    background: var(--color_orange);
+    color: var(--color_white);
 }
