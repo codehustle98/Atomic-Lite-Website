@@ -20,9 +20,16 @@ button{
 }
 
 /*Header css*/
-nav{
+header{
     height: 85px;
+    width: 100%;
 }
+.fixed {
+    position: fixed;
+    background-color: #fff;
+    transition: all 0.7s ease-in;
+    z-index: 1;
+  }
 .content{
     margin: 0 10px;
     height: 100%;

@@ -9,3 +9,11 @@ function navigateTo(menu){
         item.classList.remove('active');
     });
 }
+
+window.addEventListener('scroll',()=>{
+    if(window.scrollY > 150){
+        document.querySelector('header').classList.add('fixed');
+    }else{
+        document.querySelector('header').classList.remove('fixed');
+    }
+})
