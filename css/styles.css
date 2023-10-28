@@ -25,6 +25,7 @@ nav{
 .content{
     margin: 0 10px;
     height: 100%;
+    padding: 0px 30px;
 }
 .nav-links li a{
     text-decoration: none;
@@ -35,10 +36,18 @@ nav{
 .nav-links li{
     display: block;
     height: 100%;
-    margin:0 10px;
+    margin:0 20px;
 }
 .nav-links{
     list-style-type: none;
+}
+.search-icon{
+    border: 2px solid black;
+    padding: 26px 14px;
+    border-top-color: transparent ;
+    border-bottom-color: transparent;
+    border-left-color: gray;
+    border-right-color: gray;
 }
 
 /*banner css*/
