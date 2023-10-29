@@ -56,8 +56,17 @@ header{
     border-bottom-color: transparent;
     border-left-color: #c1bcbc;
     border-right-color: #c1bcbc;
-}
+    cursor: pointer;
 
+}
+.search-icon{
+    background-color: var(--color_white);
+    transition: background-color 1s;
+}
+.search-icon:hover{
+    background-color: var(--color_orange); 
+     
+}
 /*banner css*/
 .banner{
     width: 100%;
