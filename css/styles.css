@@ -1,6 +1,6 @@
 @import url("utility.css");
 @import url("variables.css");
-
+@import url("fonts.css");
 
 *{
     padding: 0;
@@ -9,6 +9,7 @@
 }
 html{
     scroll-behavior: smooth;
+    font-family: 'Lato-R','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 button{
@@ -19,9 +20,16 @@ button{
 }
 
 /*Header css*/
-nav{
+header{
     height: 85px;
+    width: 100%;
 }
+.fixed {
+    position: fixed;
+    background-color: #fff;
+    transition: all 0.7s ease-in;
+    z-index: 1;
+  }
 .content{
     margin: 0 10px;
     height: 100%;
@@ -31,7 +39,7 @@ nav{
     text-decoration: none;
     text-transform: capitalize;
     color: #837c7c;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 .nav-links li{
     display: block;
@@ -46,8 +54,8 @@ nav{
     padding: 26px 14px;
     border-top-color: transparent ;
     border-bottom-color: transparent;
-    border-left-color: gray;
-    border-right-color: gray;
+    border-left-color: #c1bcbc;
+    border-right-color: #c1bcbc;
 }
 
 /*banner css*/
@@ -63,6 +71,7 @@ nav{
     position: relative;
 }
 .banner h1{
+    font-family: 'Lato-B';
     font-size: 3.5rem;
     margin-bottom: 2%;
     letter-spacing: 2px;
@@ -88,6 +97,9 @@ nav{
 }
 .action-btn:hover{
     transform: translateY(-5px);
+}
+.nav-link{
+    outline: #837c7c;
 }
 .nav-link.active{
     color: var(--color_orange);

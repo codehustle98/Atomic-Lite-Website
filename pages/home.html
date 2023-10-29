@@ -8,18 +8,16 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div class="content d-flex align-items-center justify-content-between">
-                <img src="../svg/logo.svg"/>
-                <ul class="nav-links d-flex align-items-center justify-content-between">
-                    <li><a href="#" class="nav-link active">main pages</a></li>
-                    <li><a href="#" class="nav-link">landing page</a></li>
-                    <li><a href="#" class="nav-link">blog</a></li>
-                    <li><a href="#" class="nav-link">system</a></li>
-                </ul>
-                <img class="search-icon" src="../svg/search-icon.svg" height="30" width="30">
-            </div>
-        </nav>
+        <div class="content d-flex align-items-center justify-content-between">
+            <img src="../svg/logo.svg"/>
+            <ul class="nav-links d-flex align-items-center justify-content-between">
+                <li><a href="#" class="nav-link active" onclick="navigateTo('main')" data-menu="main">main pages</a></li>
+                <li><a href="#" class="nav-link" onclick="navigateTo('landing')" data-menu="landing">landing page</a></li>
+                <li><a href="#" class="nav-link" onclick="navigateTo('blog')" data-menu="blog">blog</a></li>
+                <li><a href="#" class="nav-link" onclick="navigateTo('system')" data-menu="system">system</a></li>
+            </ul>
+            <img class="search-icon" src="../svg/search-icon.svg" height="30" width="30">
+        </div>
     </header>
     <div class="banner">
         <div class="banner-content d-flex flex-column align-items-center justify-content-center">
@@ -28,5 +26,10 @@
             <button type="button" class="action-btn btn-primary">Call To Action</button>
         </div>
     </div>
+    <h1>Heading</h1>
+    <h1>Heading</h1>
+    <h1>Heading</h1>
+    <h1>Heading</h1>
+    <script type="text/javascript" src="../js/script.js"/>
 </body>
 </html>
