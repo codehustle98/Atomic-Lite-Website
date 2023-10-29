@@ -27,8 +27,8 @@ header{
 .fixed {
     position: fixed;
     background-color: #fff;
-    transition: all 0.7s ease-in;
     z-index: 1;
+    transition: all 0.4s ease-in;
   }
 .content{
     margin: 0 10px;
@@ -103,4 +103,56 @@ header{
 }
 .nav-link.active{
     color: var(--color_orange);
+}
+
+/*Highlights section*/
+.highlights{
+    background-color: rgba(74, 82, 120, 1);
+    height: 250px;
+    width: 100%;
+    position: relative;
+}
+.highlight-wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 95%;
+    height: 80%;
+    color: var(--color_white);
+}
+.wrapper-section-1{
+    height: 100%;
+    flex-basis: 60%;
+    font-size: 2rem;
+}
+.highlight-icon{
+    font-size: 2.5rem;
+    margin-right: 10px;
+}
+.rocket-icon::before{
+    display: inline-block;
+    content: url(../svg/rocket.svg);
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+}
+.calendar-icon::before{
+    display: inline-block;
+    content: url(../svg/calendar.svg);
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+}
+.trophy-icon::before{
+    display: inline-block;
+    content: url(../svg/trophy.svg);
+    width: 35px;
+    height: 35px;
+    margin-right: 15px;
+}
+.highlight-icon + p{
+    margin-left: 16%;
+    margin-top: 10px;
+    line-height: 25px;
 }

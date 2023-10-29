@@ -16,4 +16,28 @@ window.addEventListener('scroll',()=>{
     }else{
         document.querySelector('header').classList.remove('fixed');
     }
-})
+});
+
+// counter animation
+const counters = document.querySelectorAll(".highlight-icon");
+const speed = 800;
+window.addEventListener('scroll',()=>{
+    if(window.scrollY > 200){
+        counters.forEach(counter => {
+            counter.style.animationDelay = '1s';
+            const animate = () => {
+                const value = +counter.getAttribute('data-count');
+                const data = +counter.innerText;
+        
+                const time = value / speed;
+                if(data < value){
+                    counter.innerText = Math.ceil(data + time);
+                    setTimeout(animate,1);
+                }else{
+                    counter.innerText = value;
+                }
+            }
+            animate();
+        });
+    }
+});
